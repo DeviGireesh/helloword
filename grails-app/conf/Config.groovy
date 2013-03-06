@@ -89,3 +89,7 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+def env = System.getenv()
+def confDir = env['PRIV_CONF'] ?: env['HOME'] + '/.grails/priv_conf'
+grails.config.locations = ["classpath:external-config.groovy", "file:${confDir}/${appName}-config.groovy"]
