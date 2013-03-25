@@ -14,7 +14,7 @@ class HelloService {
         def foo = [:]
         foo.put("name","Mike")
         foo.put("age",32)
-        foo.put("sex", "yes, often please")
+        foo.put("sex", "Yes, often please.")
         return foo
     }
 }
